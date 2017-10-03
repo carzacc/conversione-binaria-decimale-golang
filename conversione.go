@@ -7,12 +7,22 @@ var numerocorrente int
 var decbin string
 var numerin int
 var numerout int
+var resti int
+func in_bin (numeroinput int) int {
+  numerocorrente=numeroinput
+  resti=0
+}
+func in_dec (numeroinput int) int {
+  numerocorrente=numeroinput
+  for numerocorrente>0 {
+
+  }
+}
 func conversione(numeroin int,decbin string) int {
-  numerocorrente=numeroin
   if decbin=="bindec" {
-    return numeroin
+    return in_dec(numeroin)
   }else{
-    return numeroin+50
+    return in_bin(numeroin)
   }
 }
 
